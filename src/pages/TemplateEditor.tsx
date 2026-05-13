@@ -34,6 +34,7 @@ export default function TemplateEditor() {
 
       const grapesjs = (await import('grapesjs')).default
       const newsletterPreset = (await import('grapesjs-preset-newsletter')).default
+      // @ts-ignore
       await import('grapesjs/dist/css/grapes.min.css')
 
       if (!containerRef.current || !mounted) return
